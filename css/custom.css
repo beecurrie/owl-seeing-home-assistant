@@ -1,1 +1,168 @@
-/* All External Custom CSS Here */
+@import url("https://fonts.googleapis.com/css2?family=BenchNine:wght@300&display=swap");
+html {
+  width: 100vw;
+  height: 100vh;
+  background-color: #303030; }
+
+a {
+  color: #FDCB3F; }
+
+a:active {
+  color: #FDCB3F; }
+
+h1 {
+  font-family: 'BenchNine', sans-serif;
+  margin-block-start: 0px;
+  margin-block-end: 0px; }
+
+h2 {
+  font-family: 'BenchNine', sans-serif;
+  margin-block-start: 0px;
+  margin-block-end: 0px; }
+
+.hdr img {
+  position: absolute;
+  top: 5px;
+  right: 170px;
+  height: 6vh;
+  width: 20vw; }
+
+.camera-main {
+  overflow: hidden;
+  height: 35vh;
+  width: 91vw;
+  margin: 60px 5px 5px 5px;
+  border: 5px solid #FDCB3F;
+  background-color: #FDCB3F;
+  border-radius: 30px; }
+
+.camera-main-hdr {
+  text-align: center;
+  height: 6vh;
+  font-family: 'BenchNine', sans-serif;
+  color: #FDCB3F;
+  margin: 0px; }
+
+.utilities {
+  font-family: 'BenchNine', sans-serif;
+  height: 15vh;
+  width: 101vw;
+  color: #303030; }
+
+.lighting {
+  float: left;
+  height: 100%;
+  width: 27%;
+  background-color: #FDCB3F;
+  border-radius: 20px;
+  margin: 5px;
+  padding: 5px;
+  text-align: center; }
+
+.fa-lightbulb {
+  font-size: 80px; }
+
+.heating {
+  float: left;
+  height: 100%;
+  width: 27%;
+  background-color: #FDCB3F;
+  border-radius: 20px;
+  margin: 5px;
+  padding: 5px;
+  text-align: center; }
+
+.fa-thermometer-half {
+  font-size: 80px; }
+
+.sound {
+  float: left;
+  height: 100%;
+  width: 27%;
+  background-color: #FDCB3F;
+  border-radius: 20px;
+  margin: 5px;
+  padding: 5px;
+  text-align: center; }
+
+.fa-volume-down {
+  font-size: 80px; }
+
+.security {
+  position: relative;
+  height: 13vh;
+  width: 90vw;
+  border: solid 4px #FDCB3F;
+  border-radius: 30px;
+  margin: 32px 5px 5px 5px;
+  padding: 5px; }
+
+.armed {
+  float: left;
+  text-align: center;
+  width: 30%;
+  border: solid 3px #FDCB3F;
+  border-radius: 30px;
+  background-color: #FDCB3F;
+  color: white;
+  margin: 5px; }
+
+.disarmed {
+  float: left;
+  text-align: center;
+  width: 30%;
+  border: solid 3px #FDCB3F;
+  border-radius: 30px;
+  color: white;
+  margin: 5px; }
+
+.security h1 {
+  color: #FDCB3F;
+  margin-left: 10px; }
+
+.fa-lock {
+  font-size: 70px;
+  color: #3BA931;
+  position: absolute;
+  top: 20px;
+  right: 10px; }
+
+.nav {
+  position: absolute;
+  bottom: 1px;
+  height: 7vh;
+  width: 100vw; }
+
+ul {
+  padding-inline-start: 0px; }
+
+li {
+  text-decoration: none;
+  text-align: center;
+  list-style-type: none;
+  float: left;
+  height: 100%;
+  width: 15%;
+  margin: 10px; }
+
+.fa-tv {
+  font-size: 40px; }
+
+.fa-bell {
+  font-size: 40px; }
+
+.fa-home {
+  border: 8px solid white;
+  border-radius: 70px;
+  background-color: white;
+  font-size: 45px;
+  margin-top: -15px;
+  margin-left: -5px; }
+
+.fa-video {
+  font-size: 40px; }
+
+.fa-user-plus {
+  font-size: 40px; }
+
+/*# sourceMappingURL=custom.css.map */
