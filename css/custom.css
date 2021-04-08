@@ -12,11 +12,13 @@ a:active {
 
 h1 {
   font-family: 'BenchNine', sans-serif;
+  color: #FDCB3F;
   margin-block-start: 0px;
   margin-block-end: 0px; }
 
 h2 {
   font-family: 'BenchNine', sans-serif;
+  color: #FDCB3F;
   margin-block-start: 0px;
   margin-block-end: 0px; }
 
@@ -287,5 +289,69 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%; }
+
+.cameras {
+  margin-top: 50px;
+  height: 50vh;
+  width: 100vw;
+  padding: 10px; }
+
+.float-one,
+.float-two,
+.float-three,
+.float-four {
+  float: left;
+  width: 47%;
+  height: 30vh; }
+
+.front-door {
+  margin: 10px;
+  height: 75%;
+  border: solid 4px #FDCB3F;
+  border-radius: 30px;
+  overflow: hidden; }
+
+.front-door img {
+  margin-left: -50px; }
+
+.front-door-hdr {
+  color: #FDCB3F;
+  text-align: center; }
+
+.back-door {
+  margin: 10px;
+  height: 75%;
+  border: solid 4px #FDCB3F;
+  border-radius: 30px;
+  overflow: hidden; }
+
+.back-door img {
+  margin-top: -40px; }
+
+.back-door-hdr {
+  color: #FDCB3F;
+  text-align: center; }
+
+.garage {
+  margin: 10px;
+  height: 75%;
+  border: solid 4px #FDCB3F;
+  border-radius: 30px;
+  overflow: hidden; }
+
+.garage-hdr {
+  color: #FDCB3F;
+  text-align: center; }
+
+.living-room {
+  margin: 10px;
+  height: 75%;
+  border: solid 4px #FDCB3F;
+  border-radius: 30px;
+  overflow: hidden; }
+
+.living-hdr {
+  color: #FDCB3F;
+  text-align: center; }
 
 /*# sourceMappingURL=custom.css.map */

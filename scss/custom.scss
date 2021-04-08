@@ -22,12 +22,14 @@ a:active {
 
 h1 {
   font-family: 'BenchNine', sans-serif;
+  color: $gold;
   margin-block-start: 0px;
   margin-block-end: 0px;
 }
 
 h2 {
   font-family: 'BenchNine', sans-serif;
+  color: $gold;
   margin-block-start: 0px;
   margin-block-end: 0px;
 }
@@ -376,8 +378,98 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
-
+// Toggle Switches END
   // Rooms CSS END
 
-
 // Lighting Content CSS END
+
+// Cameras CSS START
+
+  .cameras {
+    margin-top: 50px;
+    height: 50vh;
+    width: 100vw;
+    padding: 10px;
+  }
+
+// Front Door Camera CSS START
+  .float-one,
+  .float-two,
+  .float-three,
+  .float-four {
+    float: left;
+    width: 47%;
+    height: 30vh;
+  }
+
+  .front-door {
+    margin: 10px;
+    height: 75%;
+    border: solid 4px $gold;
+    border-radius: 30px;
+    overflow: hidden;
+  }
+
+  .front-door img {
+    margin-left: -50px;
+  }
+    .front-door-hdr {
+      color: $gold;
+      text-align: center;
+    }
+
+// Front Door Camera CSS END
+
+
+  .back-door {
+    margin: 10px;
+    height: 75%;
+    border: solid 4px $gold;
+    border-radius: 30px;
+    overflow: hidden;
+  }
+
+  .back-door img {
+    margin-top: -40px;
+  }
+
+  .back-door-hdr {
+    color: $gold;
+    text-align: center;
+  }
+
+  // Back Door Camera CSS END
+  // Garage Camera CSS START
+
+  .garage {
+    margin: 10px;
+    height: 75%;
+    border: solid 4px $gold;
+    border-radius: 30px;
+    overflow: hidden;
+  }
+
+  .garage-hdr {
+    color: $gold;
+    text-align: center;
+  }
+
+  // Garage Camera CSS END
+  // Living Room Camera CSS START
+
+  .living-room {
+    margin: 10px;
+    height: 75%;
+    border: solid 4px $gold;
+    border-radius: 30px;
+    overflow: hidden;
+  }
+
+  .living-hdr {
+    color: $gold;
+    text-align: center;
+  }
+
+
+
+// Front Door CSS END
