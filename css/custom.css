@@ -12,13 +12,13 @@ a:active {
 
 h1 {
   font-family: 'BenchNine', sans-serif;
-  margin-block-start: 0px;
-  margin-block-end: 0px; }
+  margin-block-start: 0;
+  margin-block-end: 0; }
 
 h2 {
   font-family: 'BenchNine', sans-serif;
-  margin-block-start: 0px;
-  margin-block-end: 0px; }
+  margin-block-start: 0;
+  margin-block-end: 0; }
 
 p {
   font-family: 'BenchNine', sans-serif; }
@@ -37,7 +37,7 @@ p {
   width: 95vw; }
 
 ul {
-  padding-inline-start: 0px; }
+  padding-inline-start: 0; }
 
 li {
   text-decoration: none;
@@ -72,7 +72,7 @@ li {
   overflow: hidden;
   height: 30vh;
   width: 90vw;
-  margin: 60px 5px 5px 5px;
+  margin: 60px 5px 5px;
   border: 5px solid #FDCB3F;
   background-color: #FDCB3F;
   border-radius: 30px; }
@@ -82,7 +82,7 @@ li {
   height: 6vh;
   font-family: 'BenchNine', sans-serif;
   color: #FDCB3F;
-  margin: 0px; }
+  margin: 0; }
 
 .utilities a {
   color: #303030;
@@ -139,7 +139,7 @@ li {
   width: 90vw;
   border: solid 4px #FDCB3F;
   border-radius: 30px;
-  margin: 32px 5px 5px 5px;
+  margin: 32px 5px 5px;
   padding: 5px; }
 
 .armed {
@@ -259,8 +259,8 @@ li {
   right: 0;
   bottom: 0;
   background-color: #E55252;
-  -webkit-transition: .4s;
-  transition: .4s; }
+  -webkit-transition: 0.4s;
+  transition: 0.4s; }
 
 .slider:before {
   position: absolute;
@@ -270,8 +270,8 @@ li {
   left: 4px;
   bottom: 4px;
   background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s; }
+  -webkit-transition: 0.4s;
+  transition: 0.4s; }
 
 input:checked + .slider {
   background-color: #3BA931; }
@@ -297,10 +297,10 @@ input:checked + .slider:before {
   width: 100vw;
   padding: 10px; }
 
+.float-four,
 .float-one,
-.float-two,
 .float-three,
-.float-four {
+.float-two {
   float: left;
   width: 46%;
   height: 30vh; }
@@ -359,6 +359,11 @@ input:checked + .slider:before {
   width: 100vw;
   height: 40vh;
   margin: 110px 10px 10px 13px; }
+
+.wip {
+  color: #FDCB3F;
+  text-align: center;
+  margin-top: 300px; }
 
 @media only screen and (min-width: 768px) {
   .hdr img {

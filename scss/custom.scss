@@ -1,29 +1,20 @@
 // Sass
-
 // Imports
 @import "variables";
 @import url('https://fonts.googleapis.com/css2?family=BenchNine:wght@300&display=swap');
-
 // Mixins
-
-
 // Cameras Spacing Mixin
 @mixin section-space {
   margin: 10px;
   height: 75%;
 }
-
-
 // General CSS Changes START
-
 html {
   width: 100vw;
   height: 100vh;
   background-color: $bg;
 }
-
 // List Item Coloring Set
-
 a {
   color: $gold;
 }
@@ -31,310 +22,285 @@ a {
 a:active {
   color: $gold;
 }
-
 // Header Resets
-
 h1 {
   font-family: 'BenchNine', sans-serif;
-  margin-block-start: 0px;
-  margin-block-end: 0px;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
 h2 {
   font-family: 'BenchNine', sans-serif;
-  margin-block-start: 0px;
-  margin-block-end: 0px;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
 p {
   font-family: 'BenchNine', sans-serif;
 }
-
 // General CSS Changes END
-
-
 // Global Nav & Header CSS START
-  // Header CSS START
+// Header CSS START
+.hdr img {
+  position: absolute;
+  top: 7px;
+  right: 145px;
+  height: 5vh;
+  width: 18vw;
+}
+// Header CSS END
+// Navigation CSS START
+.nav {
+  position: absolute;
+  bottom: 1px;
+  height: 7vh;
+  width: 95vw;
+}
 
-  .hdr img {
-    position: absolute;
-    top: 7px;
-    right: 145px;
-    height: 5vh;
-    width: 18vw;
-  }
+ul {
+  padding-inline-start: 0;
+}
 
-  // Header CSS END
+li {
+  text-decoration: none;
+  text-align: center;
+  list-style-type: none;
+  float: left;
+  height: 100%;
+  width: 14%;
+  margin: 10px;
+}
 
-  // Navigation CSS START
+.fa-tv {
+  font-size: 40px;
+}
 
-  .nav {
-    position: absolute;
-    bottom: 1px;
-    height: 7vh;
-    width: 95vw;
-  }
+.fa-bell {
+  font-size: 40px;
+}
 
-  ul {
-    padding-inline-start: 0px;
-  }
+.fa-home {
+  border: 8px solid white;
+  border-radius: 70px;
+  background-color: white;
+  font-size: 45px;
+  margin-top: -15px;
+  margin-left: -10px;
+}
 
-  li {
-    text-decoration: none;
-    text-align: center;
-    list-style-type: none;
-    float: left;
-    height: 100%;
-    width: 14%;
-    margin: 10px;
-  }
+.fa-video {
+  font-size: 40px;
+}
 
-  .fa-tv {
-    font-size: 40px;
-  }
-
-  .fa-bell {
-    font-size: 40px;
-  }
-
-  .fa-home {
-    border: 8px solid white;
-    border-radius: 70px;
-    background-color: white;
-    font-size: 45px;
-    margin-top: -15px;
-    margin-left: -10px;
-  }
-
-  .fa-video {
-    font-size: 40px;
-  }
-
-  .fa-user-plus {
-    font-size: 40px;
-  }
+.fa-user-plus {
+  font-size: 40px;
+}
 // Global Nav & Header CSS END
-
 // Index Content CSS START
-  // Main Camera CSS START
+// Main Camera CSS START
+.camera-main {
+  overflow: hidden;
+  height: 30vh;
+  width: 90vw;
+  margin: 60px 5px 5px;
+  border: 5px solid $gold;
+  background-color: $gold;
+  border-radius: 30px;
+}
 
-  .camera-main {
-    overflow: hidden;
-    height: 30vh;
-    width: 90vw;
-    margin: 60px 5px 5px 5px;
-    border: 5px solid $gold;
-    background-color: $gold;
-    border-radius: 30px;
-  }
-
-  .camera-main-hdr {
-    text-align: center;
-    height: 6vh;
-    font-family: 'BenchNine', sans-serif;
-    color: $gold;
-    margin: 0px;
-  }
-
-
-
+.camera-main-hdr {
+  text-align: center;
+  height: 6vh;
+  font-family: 'BenchNine', sans-serif;
+  color: $gold;
+  margin: 0;
+}
 // Utilities CSS START
-
 .utilities a {
   color: $bg;
   text-decoration: none;
 }
 
-  .utilities {
-    font-family: 'BenchNine', sans-serif;
-    height: 15vh;
-    width: 99vw;
-    color: $bg;
-  }
+.utilities {
+  font-family: 'BenchNine', sans-serif;
+  height: 15vh;
+  width: 99vw;
+  color: $bg;
+}
 
+.lighting {
+  float: left;
+  height: 100%;
+  width: 27%;
+  background-color: $gold;
+  border-radius: 20px;
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+}
 
-  .lighting  {
-    float: left;
-    height: 100%;
-    width: 27%;
-    background-color: $gold;
-    border-radius: 20px;
-    margin: 5px;
-    padding: 5px;
-    text-align: center;
-  }
+.fa-lightbulb {
+  font-size: 80px;
+}
 
-  .fa-lightbulb {
-    font-size: 80px;
-  }
+.heating {
+  float: left;
+  height: 100%;
+  width: 27%;
+  background-color: $gold;
+  border-radius: 20px;
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+}
 
-  .heating {
-    float: left;
-    height: 100%;
-    width: 27%;
-    background-color: $gold;
-    border-radius: 20px;
-    margin: 5px;
-    padding: 5px;
-    text-align: center;
-  }
+.fa-thermometer-half {
+  font-size: 80px;
+}
 
-  .fa-thermometer-half {
-    font-size: 80px;
-  }
+.sound {
+  float: left;
+  height: 100%;
+  width: 27%;
+  background-color: $gold;
+  border-radius: 20px;
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+}
 
-  .sound {
-    float: left;
-    height: 100%;
-    width: 27%;
-    background-color: $gold;
-    border-radius: 20px;
-    margin: 5px;
-    padding: 5px;
-    text-align: center;
-  }
+.fa-volume-down {
+  font-size: 80px;
+}
+// Utilities END
+// Security CSS START
+.security {
+  position: relative;
+  height: 13vh;
+  width: 90vw;
+  border: solid 4px $gold;
+  border-radius: 30px;
+  margin: 32px 5px 5px;
+  padding: 5px;
+}
 
-  .fa-volume-down {
-    font-size: 80px;
-  }
+.armed {
+  float: left;
+  text-align: center;
+  width: 30%;
+  border: solid 3px $gold;
+  border-radius: 30px;
+  background-color: $gold;
+  color: white;
+  margin: 5px;
+}
 
-  // Utilities END
+.disarmed {
+  float: left;
+  text-align: center;
+  width: 30%;
+  border: solid 3px $gold;
+  border-radius: 30px;
+  color: white;
+  margin: 5px;
+}
 
-  // Security CSS START
+.security h1 {
+  color: $gold;
+  margin-left: 10px;
+}
 
-  .security {
-    position: relative;
-    height: 13vh;
-    width: 90vw;
-    border: solid 4px $gold;
-    border-radius: 30px;
-    margin: 32px 5px 5px 5px;
-    padding: 5px;
-  }
-
-  .armed {
-    float: left;
-    text-align: center;
-    width: 30%;
-    border: solid 3px $gold;
-    border-radius: 30px;
-    background-color: $gold;
-    color: white;
-    margin: 5px;
-  }
-
-  .disarmed {
-    float: left;
-    text-align: center;
-    width: 30%;
-    border: solid 3px $gold;
-    border-radius: 30px;
-    color: white;
-    margin: 5px;
-  }
-
-  .security h1 {
-    color: $gold;
-    margin-left: 10px;
-  }
-
-  .fa-lock {
-    font-size: 70px;
-    color: $green;
-    position: absolute;
-    top: 20px;
-    right: 10px;
-  }
-
-  // Security CSS END
+.fa-lock {
+  font-size: 70px;
+  color: $green;
+  position: absolute;
+  top: 20px;
+  right: 10px;
+}
+// Security CSS END
 // Index Content CSS END
-
 // Lighting Content CSS START
-  // Lighting HDR CSS START
+// Lighting HDR CSS START
+.hdr-text {
+  height: 2vh;
+  width: 97vw;
+  text-align: center;
+  margin-top: 100px;
+  text-decoration: underline;
+  color: $gold;
+}
+// Rooms CSS START
+.rooms {
+  color: $gold;
+  margin-top: 70px;
+}
 
-  .hdr-text {
-    height: 2vh;
-    width: 97vw;
-    text-align: center;
-    margin-top: 100px;
-    text-decoration: underline;
-    color: $gold;
-  }
+.kitchen {
+  width: 87vw;
+  border: solid 4px $gold;
+  border-radius: 30px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
 
-  // Rooms CSS START
+.kitchen h2 {
+  display: inline;
+  margin: 0;
+}
 
-  .rooms {
-    color: $gold;
-    margin-top: 70px;
-  }
+.living {
+  width: 87vw;
+  border: solid 4px $gold;
+  border-radius: 30px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
 
-  .kitchen {
-    width: 87vw;
-    border: solid 4px $gold;
-    border-radius: 30px;
-    padding: 10px;
-    margin-bottom: 20px;
-  }
+.living h2 {
+  display: inline;
+  margin: 0;
+}
 
-  .kitchen h2 {
-    display: inline;
-    margin: 0;
-  }
+.bathroom {
+  width: 87vw;
+  border: solid 4px $gold;
+  border-radius: 30px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
 
-  .living {
-    width: 87vw;
-    border: solid 4px $gold;
-    border-radius: 30px;
-    padding: 10px;
-    margin-bottom: 20px;
-  }
+.bathroom h2 {
+  display: inline;
+  margin: 0;
+}
 
-  .living h2 {
-    display: inline;
-    margin: 0;
-  }
+.kidsbdr {
+  width: 87vw;
+  border: solid 4px $gold;
+  border-radius: 30px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
 
-  .bathroom {
-    width: 87vw;
-    border: solid 4px $gold;
-    border-radius: 30px;
-    padding: 10px;
-    margin-bottom: 20px;
-  }
+.kidsbdr h2 {
+  display: inline;
+  margin: 0;
+}
 
-  .bathroom h2 {
-    display: inline;
-    margin: 0;
-  }
+.masterbdr {
+  width: 87vw;
+  border: solid 4px $gold;
+  border-radius: 30px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
 
-  .kidsbdr {
-    width: 87vw;
-    border: solid 4px $gold;
-    border-radius: 30px;
-    padding: 10px;
-    margin-bottom: 20px;
-  }
-
-  .kidsbdr h2 {
-    display: inline;
-    margin: 0;
-  }
-
-  .masterbdr {
-    width: 87vw;
-    border: solid 4px $gold;
-    border-radius: 30px;
-    padding: 10px;
-    margin-bottom: 20px;
-  }
-
-  .masterbdr h2 {
-    display: inline;
-    margin: 0;
-  }
-
+.masterbdr h2 {
+  display: inline;
+  margin: 0;
+}
 // Toggle Switches CSS (w3 Schools)
-  .switch {
+.switch {
   float: right;
   position: relative;
   display: block;
@@ -356,8 +322,8 @@ p {
   right: 0;
   bottom: 0;
   background-color: $red;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .slider:before {
@@ -368,8 +334,8 @@ p {
   left: 4px;
   bottom: 4px;
   background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 input:checked + .slider {
@@ -385,7 +351,6 @@ input:checked + .slider:before {
   -ms-transform: translateX(26px);
   transform: translateX(26px);
 }
-
 /* Rounded sliders */
 .slider.round {
   border-radius: 34px;
@@ -395,110 +360,101 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 // Toggle Switches END
-  // Rooms CSS END
-
+// Rooms CSS END
 // Lighting Content CSS END
-
 // Cameras CSS START
-
-  .cameras {
-    margin-top: 50px;
-    height: 50vh;
-    width: 100vw;
-    padding: 10px;
-  }
-
+.cameras {
+  margin-top: 50px;
+  height: 50vh;
+  width: 100vw;
+  padding: 10px;
+}
 // Front Door Camera CSS START
-  .float-one,
-  .float-two,
-  .float-three,
-  .float-four {
-    float: left;
-    width: 46%;
-    height: 30vh;
-  }
+.float-four,
+.float-one,
+.float-three,
+.float-two {
+  float: left;
+  width: 46%;
+  height: 30vh;
+}
 
-  .front-door {
-    @include section-space;
-    border: solid 4px $gold;
-    border-radius: 30px;
-    overflow: hidden;
-  }
+.front-door {
+  @include section-space;
+  border: solid 4px $gold;
+  border-radius: 30px;
+  overflow: hidden;
+}
 
-  .front-door img {
-    margin-left: -50px;
-  }
-    .front-door-hdr {
-      color: $gold;
-      text-align: center;
-    }
+.front-door img {
+  margin-left: -50px;
+}
 
+.front-door-hdr {
+  color: $gold;
+  text-align: center;
+}
 // Front Door Camera CSS END
+.back-door {
+  @include section-space;
+  border: solid 4px $gold;
+  border-radius: 30px;
+  overflow: hidden;
+}
 
+.back-door img {
+  margin-top: -40px;
+}
 
-  .back-door {
-    @include section-space;
-    border: solid 4px $gold;
-    border-radius: 30px;
-    overflow: hidden;
-  }
+.back-door-hdr {
+  color: $gold;
+  text-align: center;
+}
+// Back Door Camera CSS END
+// Garage Camera CSS START
+.garage {
+  @include section-space;
+  border: solid 4px $gold;
+  border-radius: 30px;
+  overflow: hidden;
+}
 
-  .back-door img {
-    margin-top: -40px;
-  }
+.garage-hdr {
+  color: $gold;
+  text-align: center;
+}
+// Garage Camera CSS END
+// Living Room Camera CSS START
+.living-room {
+  @include section-space;
+  border: solid 4px $gold;
+  border-radius: 30px;
+  overflow: hidden;
+}
 
-  .back-door-hdr {
-    color: $gold;
-    text-align: center;
-  }
-
-  // Back Door Camera CSS END
-  // Garage Camera CSS START
-
-  .garage {
-    @include section-space;
-    border: solid 4px $gold;
-    border-radius: 30px;
-    overflow: hidden;
-  }
-
-  .garage-hdr {
-    color: $gold;
-    text-align: center;
-  }
-
-  // Garage Camera CSS END
-  // Living Room Camera CSS START
-
-  .living-room {
-    @include section-space;
-    border: solid 4px $gold;
-    border-radius: 30px;
-    overflow: hidden;
-  }
-
-  .living-hdr {
-    color: $gold;
-    text-align: center;
-  }
-
+.living-hdr {
+  color: $gold;
+  text-align: center;
+}
 // Cameras CSS END
-
 // Heating Page CSS START
-  // Jquery Knob CSS
-
+// Jquery Knob CSS
 .knob-container {
   width: 100vw;
   height: 40vh;
   margin: 110px 10px 10px 13px;
 }
+// Heating Page CSS END
+// Work In Progress Text across empty pages
+
+.wip {
+  color: $gold;
+  text-align: center;
+  margin-top: 300px;
+}
 
 
-
-
-
-
-// Media Queries
+// Media Queries - Tablet
 @media only screen and (min-width: 768px) {
   .hdr img {
     width: 80px;
@@ -525,5 +481,4 @@ input:checked + .slider:before {
     text-align: center;
     margin-left: 80px;
   }
-
 }
