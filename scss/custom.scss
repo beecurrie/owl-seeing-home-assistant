@@ -2,12 +2,22 @@
 // Imports
 @import "variables";
 @import url('https://fonts.googleapis.com/css2?family=BenchNine:wght@300&display=swap');
+
+
 // Mixins
 // Cameras Spacing Mixin
 @mixin section-space {
   margin: 10px;
   height: 75%;
 }
+
+// Border mixin
+@mixin border {
+  border: solid 4px $gold;
+  border-radius: 30px;
+}
+
+
 // General CSS Changes START
 html {
   width: 100vw;
@@ -50,26 +60,29 @@ p {
 }
 // Header CSS END
 // Navigation CSS START
+// Navigation with Nesting Example
 .nav {
   position: absolute;
   bottom: 1px;
   height: 7vh;
   width: 95vw;
+  li {
+    text-decoration: none;
+    text-align: center;
+    list-style-type: none;
+    float: left;
+    height: 100%;
+    width: 14%;
+    margin: 10px;
+  }
+    ul {
+      padding-inline-start: 0;
+    }
+      i {
+          color: $gold;
+      }
 }
-
-ul {
-  padding-inline-start: 0;
-}
-
-li {
-  text-decoration: none;
-  text-align: center;
-  list-style-type: none;
-  float: left;
-  height: 100%;
-  width: 14%;
-  margin: 10px;
-}
+// nav Css ENDS
 
 .fa-tv {
   font-size: 40px;
@@ -115,6 +128,7 @@ li {
   color: $gold;
   margin: 0;
 }
+
 // Utilities CSS START
 .utilities a {
   color: $bg;
@@ -178,8 +192,7 @@ li {
   position: relative;
   height: 13vh;
   width: 90vw;
-  border: solid 4px $gold;
-  border-radius: 30px;
+  @include border;
   margin: 32px 5px 5px;
   padding: 5px;
 }
@@ -237,8 +250,7 @@ li {
 
 .kitchen {
   width: 87vw;
-  border: solid 4px $gold;
-  border-radius: 30px;
+  @include border;
   padding: 10px;
   margin-bottom: 20px;
 }
@@ -250,8 +262,7 @@ li {
 
 .living {
   width: 87vw;
-  border: solid 4px $gold;
-  border-radius: 30px;
+  @include border;
   padding: 10px;
   margin-bottom: 20px;
 }
@@ -263,8 +274,7 @@ li {
 
 .bathroom {
   width: 87vw;
-  border: solid 4px $gold;
-  border-radius: 30px;
+  @include border;
   padding: 10px;
   margin-bottom: 20px;
 }
@@ -276,8 +286,7 @@ li {
 
 .kidsbdr {
   width: 87vw;
-  border: solid 4px $gold;
-  border-radius: 30px;
+  @include border;
   padding: 10px;
   margin-bottom: 20px;
 }
@@ -289,8 +298,7 @@ li {
 
 .masterbdr {
   width: 87vw;
-  border: solid 4px $gold;
-  border-radius: 30px;
+  @include border;
   padding: 10px;
   margin-bottom: 20px;
 }
@@ -381,8 +389,7 @@ input:checked + .slider:before {
 
 .front-door {
   @include section-space;
-  border: solid 4px $gold;
-  border-radius: 30px;
+  @include border;
   overflow: hidden;
 }
 
@@ -397,8 +404,7 @@ input:checked + .slider:before {
 // Front Door Camera CSS END
 .back-door {
   @include section-space;
-  border: solid 4px $gold;
-  border-radius: 30px;
+  @include border;
   overflow: hidden;
 }
 
@@ -414,8 +420,7 @@ input:checked + .slider:before {
 // Garage Camera CSS START
 .garage {
   @include section-space;
-  border: solid 4px $gold;
-  border-radius: 30px;
+  @include border;
   overflow: hidden;
 }
 
@@ -427,8 +432,7 @@ input:checked + .slider:before {
 // Living Room Camera CSS START
 .living-room {
   @include section-space;
-  border: solid 4px $gold;
-  border-radius: 30px;
+  @include border;
   overflow: hidden;
 }
 

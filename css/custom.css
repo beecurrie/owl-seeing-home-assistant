@@ -35,18 +35,18 @@ p {
   bottom: 1px;
   height: 7vh;
   width: 95vw; }
-
-ul {
-  padding-inline-start: 0; }
-
-li {
-  text-decoration: none;
-  text-align: center;
-  list-style-type: none;
-  float: left;
-  height: 100%;
-  width: 14%;
-  margin: 10px; }
+  .nav li {
+    text-decoration: none;
+    text-align: center;
+    list-style-type: none;
+    float: left;
+    height: 100%;
+    width: 14%;
+    margin: 10px; }
+  .nav ul {
+    padding-inline-start: 0; }
+  .nav i {
+    color: #FDCB3F; }
 
 .fa-tv {
   font-size: 40px; }
